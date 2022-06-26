@@ -1,0 +1,43 @@
+name: Coverage
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  envy-coverage:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        package:
+          - envy_generator
+        channel:
+          - master
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: ${{ matrix.channel }}
+
+      - name: Install dependencies
+        run: dart pub get
+        working-directory: ${{ matrix.package }}
+
+      - name: Collect coverage
+        run: |
+          dart pub get
+          dart pub global activate coverage
+          dart pub global run coverage:test_with_coverage      
+        working-directory: ${{ matrix.package }}
+
+      - uses: codecov/codecov-action@v1.0.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: ${{ matrix.package }}/coverage/lcov.info

@@ -1,0 +1,20 @@
+name: example
+description: A new Flutter project.
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  envy_annotation:
+    path: ../../envy_annotation
+
+dev_dependencies:
+  envy_generator:
+    path: ../
+  build_runner: 2.1.11
+
+dependency_overrides:
+  envy_generator:
+    path: ../
+  envy_annotation:
+    path: ../../envy_annotation

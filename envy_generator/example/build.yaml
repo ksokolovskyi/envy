@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      envy_generator:
+        enabled: true
+        generate_for:
+          - "**/config.dart"
