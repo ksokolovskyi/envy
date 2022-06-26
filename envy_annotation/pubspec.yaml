@@ -2,7 +2,7 @@ name: envy_annotation
 description: >
   Annotations for the envy code-generator.
   This package does nothing without envy too.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ksokolovskyi/envy
 
 environment:
