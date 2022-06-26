@@ -1,4 +1,6 @@
-Welcome to [Envy], code generator for extracting environment variables .
+![Build](https://github.com/ksokolovskyi/envy/workflows/Build/badge.svg) [![codecov](https://codecov.io/gh/ksokolovskyi/envy/branch/master/graph/badge.svg)](https://codecov.io/gh/ksokolovskyi/envy) [![pub package](https://img.shields.io/pub/v/envy_generator.svg?logo=dart)](https://pub.dartlang.org/packages/envy_generator)
+
+Welcome to [Envy], code generator for extracting environment variables.
 
 ## Installation
 
@@ -117,7 +119,7 @@ From this example, we can notice a few things:
 
 ## Supported types
 
-[Envy] supports the following types: `int`, `int?`, `double`, `double`, `bool`, `bool?`, `String`, `String?`.
+[Envy] supports the following types: `int`, `int?`, `double`, `double?`, `bool`, `bool?`, `String`, `String?`.
 
 [build_runner]: https://pub.dev/packages/build_runner
 [envy]: https://pub.dev/packages/envy_generator
