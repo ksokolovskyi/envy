@@ -11,7 +11,7 @@ dependencies:
 dev_dependencies:
   envy_generator:
     path: ../
-  build_runner: 2.1.11
+  build_runner: 2.3.1
 
 dependency_overrides:
   envy_generator:
