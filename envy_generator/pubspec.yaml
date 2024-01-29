@@ -1,13 +1,13 @@
 name: envy_generator
 description: Code generation for extracting environment variables 
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/ksokolovskyi/envy
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ">=3.0.1 <4.0.0"
 
 dependencies:
-  analyzer: ">=5.0.0 <6.0.0"
+  analyzer: "^6.0.0"
   build: ^2.0.0
   dotenv: ^4.0.1
   envy_annotation: ^0.0.1
