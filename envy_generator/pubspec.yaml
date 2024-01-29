@@ -10,7 +10,7 @@ dependencies:
   analyzer: "^6.0.0"
   build: ^2.0.0
   dotenv: ^4.0.1
-  envy_annotation: ^0.0.1
+  envy_annotation: ^0.0.3
   recase: ^4.0.0
   source_gen: ^1.2.0
 
