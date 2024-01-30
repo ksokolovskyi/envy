@@ -2,11 +2,11 @@ name: envy_annotation
 description: >
   Annotations for the envy code-generator.
   This package does nothing without envy too.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/ksokolovskyi/envy
 
 environment:
-  sdk: '>=2.17.0 <3.0.0'
+  sdk: ">=3.0.1 <4.0.0"
 
 dependencies: 
   meta: ^1.7.0

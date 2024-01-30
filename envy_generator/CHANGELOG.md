@@ -1,3 +1,7 @@
+## 0.0.5
+- Update SDK requirements to `>=3.0.1 <4.0.0`
+- Update `analyzer` requirements to `^6.0.0`
+
 ## 0.0.4
 - Remove `invariant_booleans` lint rule
 
